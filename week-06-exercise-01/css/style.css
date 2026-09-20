@@ -8,11 +8,16 @@
    PAGE
    ========================= */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   font-size: 17px;
   line-height: 1.8;
   color: #315b5b;
+
   background: linear-gradient(
     135deg,
     #ffd6e5 0%,
@@ -20,6 +25,7 @@ body {
     #b8e3df 65%,
     #8fd3ce 100%
   );
+
   background-attachment: fixed;
   min-height: 100vh;
   padding: 40px 0;
@@ -34,9 +40,12 @@ main {
   width: 90%;
   margin: 40px auto;
   padding: 45px 55px;
+
   background: rgba(255, 250, 252, 0.94);
+
   border: 3px solid rgba(255, 255, 255, 0.9);
   border-radius: 28px;
+
   box-shadow: 0 12px 35px rgba(55, 120, 120, 0.25);
 }
 
@@ -51,10 +60,14 @@ h1 {
   line-height: 1.1;
   letter-spacing: 0.02rem;
   text-align: center;
+
   color: #278c89;
+
   margin-bottom: 30px;
   padding-bottom: 25px;
+
   border-bottom: 3px solid #f3a9c2;
+
   text-shadow: 2px 2px 0 #ffdce8;
 }
 
@@ -62,15 +75,23 @@ h2 {
   font-family: "Nunito", sans-serif;
   font-size: 1.8rem;
   font-weight: 800;
+
   color: #d47798;
+
   margin-top: 35px;
   margin-bottom: 18px;
   padding-bottom: 8px;
+
   border-bottom: 2px solid #a9dcd8;
 }
 
 h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+
   color: #278c89;
+
   margin-top: 25px;
   margin-bottom: 12px;
 }
@@ -80,6 +101,7 @@ h3 {
    ========================= */
 
 p {
+  font-family: "Nunito", sans-serif;
   margin-bottom: 18px;
 }
 
@@ -89,6 +111,7 @@ ul {
 }
 
 li {
+  font-family: "Nunito", sans-serif;
   margin-bottom: 8px;
 }
 
@@ -101,15 +124,21 @@ li::marker {
    ========================= */
 
 a {
+  font-family: "Nunito", sans-serif;
+
   color: #258b88;
   font-weight: 700;
+
   text-decoration: none;
+
   transition: all 0.3s ease;
 }
 
 a:hover {
   color: #d66f91;
-  text-shadow: 0 0 8px rgba(255, 160, 190, 0.7);
+
+  text-shadow:
+    0 0 8px rgba(255, 160, 190, 0.7);
 }
 
 /* =========================
@@ -118,9 +147,12 @@ a:hover {
 
 code {
   font-family: "Nunito", sans-serif;
+
   color: #27716f;
   background: #e9f7f5;
+
   padding: 4px 8px;
+
   border: 1px solid #a9dcd8;
   border-radius: 7px;
 }
@@ -131,8 +163,10 @@ code {
 
 .nav-simple {
   position: fixed;
+
   left: 25px;
   top: 30px;
+
   width: 205px;
 
   background: linear-gradient(
@@ -144,6 +178,7 @@ code {
   );
 
   padding: 15px;
+
   border-radius: 20px;
   border: 2px solid white;
 
@@ -154,6 +189,7 @@ code {
 
 .nav-simple ul {
   list-style: none;
+
   margin: 0;
   padding: 0;
 }
@@ -164,6 +200,7 @@ code {
 
 .nav-simple a {
   display: block;
+
   padding: 11px 16px;
 
   color: #286967 !important;
@@ -174,7 +211,8 @@ code {
   border-radius: 13px;
 
   text-decoration: none !important;
-  font-family: "Nunito",sans-serif;
+
+  font-family: "Nunito", sans-serif;
   font-weight: 700;
 
   transition: all 0.3s ease;
@@ -205,6 +243,7 @@ code {
 
 .nav-horizontal {
   position: fixed;
+
   top: 0;
   left: 0;
   right: 0;
@@ -261,13 +300,14 @@ code {
 
   text-decoration: none !important;
 
-  font-family: "Nunito",sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 800;
 
   letter-spacing: 0.5px;
 
-  text-shadow: 1px 1px 3px rgba(30, 100, 100, 0.3);
+  text-shadow:
+    1px 1px 3px rgba(30, 100, 100, 0.3);
 
   transition: all 0.3s ease;
 }
@@ -344,7 +384,7 @@ code {
 
   border-radius: 14px;
 
-  font-family: "Nunito",sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 800;
 
   text-decoration: none !important;
@@ -388,6 +428,39 @@ img {
 }
 
 /* =========================
+   FOOTER
+   ========================= */
+
+footer {
+  background: #087f7b;
+
+  color: white;
+
+  padding: 60px 30px 30px;
+
+  text-align: center;
+
+  margin-top: 50px;
+}
+
+footer h2 {
+  color: white;
+  border-bottom: none;
+}
+
+footer p {
+  color: #c7f3f0;
+}
+
+.copyright {
+  margin-top: 40px !important;
+
+  font-size: 14px;
+
+  color: #c7f3f0;
+}
+
+/* =========================
    RESPONSIVE DESIGN
    ========================= */
 
@@ -399,7 +472,9 @@ img {
 
   main {
     width: 94%;
+
     padding: 30px 20px;
+
     margin: 70px auto 20px;
   }
 
@@ -409,7 +484,9 @@ img {
 
   .nav-simple {
     position: static;
+
     width: 94%;
+
     margin: 0 auto 20px;
   }
 
@@ -420,12 +497,14 @@ img {
   .nav-horizontal ul,
   .nav-custom ul {
     gap: 8px;
+
     flex-wrap: wrap;
   }
 
   .nav-horizontal a,
   .nav-custom a {
     padding: 8px 12px;
+
     font-size: 14px;
   }
 }
