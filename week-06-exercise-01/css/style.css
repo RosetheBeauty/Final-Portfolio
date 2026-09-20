@@ -4,79 +4,152 @@
   box-sizing: border-box;
 }
 
+/* =========================
+   PAGE
+   ========================= */
+
 body {
-  font-family: "Times New Roman", serif;
-  font-size: 16px;
-  line-height: 2;
-  color: #111111;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #315b5b;
+  background: linear-gradient(
+    135deg,
+    #ffd6e5 0%,
+    #ffc8dc 30%,
+    #b8e3df 65%,
+    #8fd3ce 100%
+  );
+  background-attachment: fixed;
   min-height: 100vh;
-  padding: 32px 0;
+  padding: 40px 0;
 }
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
 
 main {
-  max-width: 800px;
-  width: 100%;
-  padding: 0 16px;
+  max-width: 900px;
+  width: 90%;
+  margin: 40px auto;
+  padding: 45px 55px;
+  background: rgba(255, 250, 252, 0.94);
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  border-radius: 28px;
+  box-shadow: 0 12px 35px rgba(55, 120, 120, 0.25);
 }
 
+/* =========================
+   HEADINGS
+   ========================= */
+
 h1 {
-  font-size: 3.75rem;
-  font-weight: normal;
-  line-height: 1em;
-  letter-spacing: -0.25rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 0.02rem;
   text-align: center;
-  margin-bottom: 24px;
-  padding-bottom: 48px;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  color: #278c89;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 3px solid #f3a9c2;
+  text-shadow: 2px 2px 0 #ffdce8;
 }
 
 h2 {
-  font-size: 24px;
-  font-weight: normal;
-  margin-top: 32px;
-  margin-bottom: 16px;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #d47798;
+  margin-top: 35px;
+  margin-bottom: 18px;
   padding-bottom: 8px;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  border-bottom: 2px solid #a9dcd8;
 }
 
+h3 {
+  color: #278c89;
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   TEXT
+   ========================= */
+
 p {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 ul {
-  margin-left: 32px;
-  margin-bottom: 16px;
+  margin-left: 28px;
+  margin-bottom: 20px;
 }
 
 li {
   margin-bottom: 8px;
 }
 
+li::marker {
+  color: #e98eac;
+}
+
+/* =========================
+   LINKS
+   ========================= */
+
 a {
-  color: #0066CC;
-  text-decoration: underline;
+  color: #258b88;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  color: #004499;
+  color: #d66f91;
+  text-shadow: 0 0 8px rgba(255, 160, 190, 0.7);
 }
 
+/* =========================
+   CODE
+   ========================= */
+
 code {
-  font-family: monospace;
-  background-color: #f5f5f5;
-  padding: 2px 6px;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  font-family: "Nunito", sans-serif;
+  color: #27716f;
+  background: #e9f7f5;
+  padding: 4px 8px;
+  border: 1px solid #a9dcd8;
+  border-radius: 7px;
 }
+
+/* =========================
+   SIMPLE NAVIGATION
+   ========================= */
 
 .nav-simple {
   position: fixed;
-  left: 32px;
-  top: 32px;
-  width: 200px;
+  left: 25px;
+  top: 30px;
+  width: 205px;
+
+  background: linear-gradient(
+    180deg,
+    #ffc5d8,
+    #f6b4cb,
+    #a9dcd8,
+    #7fc9c5
+  );
+
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid white;
+
+  box-shadow:
+    0 8px 25px rgba(55, 120, 120, 0.3),
+    0 0 15px rgba(255, 180, 205, 0.4);
 }
 
 .nav-simple ul {
@@ -86,77 +159,287 @@ code {
 }
 
 .nav-simple li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .nav-simple a {
   display: block;
-  padding: 8px 16px;
-  color: #0066CC;
-  text-decoration: none;
-  background-color: #fafafa;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 11px 16px;
+
+  color: #286967 !important;
+
+  background: rgba(255, 255, 255, 0.72);
+
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  border-radius: 13px;
+
+  text-decoration: none !important;
+  font-family: "Nunito",sans-serif;
+  font-weight: 700;
+
+  transition: all 0.3s ease;
 }
 
 .nav-simple a:hover {
-  background-color: #0066CC;
-  color: #ffffff;
+  background: linear-gradient(
+    90deg,
+    #f3a2bd,
+    #8fd3ce
+  );
+
+  color: white !important;
+
+  transform: translateX(6px);
+
+  box-shadow:
+    0 4px 15px rgba(55, 120, 120, 0.35);
 }
 
-.nav-simple+main {
-  margin-left: 232px;
+.nav-simple + main {
+  margin-left: 250px;
 }
+
+/* =========================
+   HORIZONTAL NAVIGATION
+   ========================= */
 
 .nav-horizontal {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: #333333;
-  padding: 0 32px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  background: linear-gradient(
+    90deg,
+    #f5a6c0,
+    #f7b7cd,
+    #a9dcd8,
+    #73c4bf,
+    #4daaa6
+  );
+
+  padding: 12px 30px;
+
+  border-bottom: 3px solid #ffdce8;
+
+  box-shadow:
+    0 5px 20px rgba(55, 120, 120, 0.35),
+    0 0 15px rgba(255, 180, 205, 0.5);
+
   z-index: 1000;
 }
 
 .nav-horizontal ul {
   list-style: none;
+
   margin: 0;
   padding: 0;
+
   display: flex;
-  gap: 32px;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
 }
 
 .nav-horizontal li {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .nav-horizontal a {
   display: block;
-  padding: 16px 0;
-  color: #ffffff;
-  text-decoration: none;
-  transition: color 0.3s ease;
+
+  padding: 10px 22px;
+
+  color: white !important;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  border: 2px solid rgba(255, 255, 255, 0.8);
+
+  border-radius: 20px;
+
+  text-decoration: none !important;
+
+  font-family: "Nunito",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+
+  text-shadow: 1px 1px 3px rgba(30, 100, 100, 0.3);
+
+  transition: all 0.3s ease;
 }
 
 .nav-horizontal a:hover {
-  color: #0066CC;
+  background: #fff0f5;
+
+  color: #258b88 !important;
+
+  border-color: white;
+
+  box-shadow:
+    0 0 10px white,
+    0 0 20px rgba(255, 180, 210, 0.8);
+
+  transform: translateY(-4px) scale(1.05);
 }
 
-.nav-horizontal+main {
-  margin-top: 80px;
+.nav-horizontal + main {
+  margin-top: 90px;
 }
 
-.nav-custom {}
+/* =========================
+   CUSTOM NAVIGATION
+   ========================= */
 
-.nav-custom ul {}
+.nav-custom {
+  background: linear-gradient(
+    135deg,
+    #f4a7c0,
+    #f7bfd2,
+    #9edbd7,
+    #69bbb6
+  );
 
-.nav-custom li {}
+  padding: 16px;
 
-.nav-custom a {}
+  border-radius: 22px;
 
-.nav-custom a:hover {}
+  border: 2px solid white;
 
-@media (width >=480px) {}
+  box-shadow:
+    0 8px 25px rgba(55, 120, 120, 0.35),
+    0 0 15px rgba(255, 180, 210, 0.4);
+}
 
-@media (width >=1024px) {}
+.nav-custom ul {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 25px;
+}
+
+.nav-custom li {
+  margin: 0;
+}
+
+.nav-custom a {
+  display: block;
+
+  padding: 10px 20px;
+
+  color: white !important;
+
+  background: rgba(255, 255, 255, 0.25);
+
+  border: 2px solid rgba(255, 255, 255, 0.85);
+
+  border-radius: 14px;
+
+  font-family: "Nunito",sans-serif;
+  font-weight: 800;
+
+  text-decoration: none !important;
+
+  letter-spacing: 0.5px;
+
+  transition: all 0.3s ease;
+}
+
+.nav-custom a:hover {
+  background: #fff0f5;
+
+  color: #d47798 !important;
+
+  box-shadow:
+    0 0 10px white,
+    0 0 20px rgba(170, 220, 215, 0.9);
+
+  transform: scale(1.08);
+}
+
+/* =========================
+   IMAGES
+   ========================= */
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  display: block;
+
+  margin: 25px auto;
+
+  border-radius: 18px;
+
+  border: 3px solid white;
+
+  box-shadow:
+    0 8px 20px rgba(55, 120, 120, 0.3),
+    0 0 15px rgba(255, 170, 200, 0.45);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (width < 480px) {
+
+  body {
+    padding: 20px 0;
+  }
+
+  main {
+    width: 94%;
+    padding: 30px 20px;
+    margin: 70px auto 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .nav-simple {
+    position: static;
+    width: 94%;
+    margin: 0 auto 20px;
+  }
+
+  .nav-simple + main {
+    margin-left: auto;
+  }
+
+  .nav-horizontal ul,
+  .nav-custom ul {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .nav-horizontal a,
+  .nav-custom a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+@media (width >= 480px) {
+
+  main {
+    padding: 45px 55px;
+  }
+}
+
+@media (width >= 1024px) {
+
+  main {
+    max-width: 900px;
+  }
+}
