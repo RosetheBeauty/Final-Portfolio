@@ -31,3 +31,20 @@ body {
 * {
     box-sizing: border-box;
 }
+
+.home-button {
+    display: inline-block;
+    margin: 25px;
+    padding: 10px 18px;
+    background-color: #087f7b;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #f5b83d;
+    color: #075e5b;
+}
